@@ -1,15 +1,17 @@
 <article id="post-<?php the_ID(); ?>"  <?php post_class(); ?>>
 
-    <header class="entry-header">
+  <header class="entry-header">
 
-    <h1><?php esc_html_e( '404', 'wphierarchy' ); ?></h1>
+    <h1><?php esc_html_e( '404 - Page Not Found', 'wphierarchy' ); ?></h1>
 
-    </header>
+  </header>
 
-    <div class="entry-content">
+  <div class="entry-content">
 
-    <p><?php esc_html_e( 'Sorry! No content found here, BUDDY!!!.', 'wphierarchy' ); ?></p>
+    <p><?php esc_html_e( 'Sorry! No content found.', 'wphierarchy' ); ?></p>
 
-    </div>
+    <p><?php echo get_search_form(); ?></p>
+
+  </div>
 
 </article>

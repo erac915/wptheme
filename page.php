@@ -14,12 +14,12 @@
 
       <?php endif; ?>
 
-      <p>Template: singular.php</p>
+      <p>Template: page.php</p>
 
     </main>
 
   </div>
 
-  <?php get_sidebar(); ?>
+  <?php get_sidebar( 'page'); ?>
 
 <?php get_footer(); ?>

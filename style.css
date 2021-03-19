@@ -13,14 +13,14 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
 */
 
 body {
-  background-color: #d9b8c4;
+  background-color: #B3001B;
   font-family: "Open Sans", sans-serif;
   margin: 0;
 }
 
 body.tag-50,
-body.category-9 {
-  background-color: #a7ff91;
+body.category-22 {
+  background-color: #183b0f;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -44,8 +44,9 @@ h2.search-title {
 }
 
 a {
-  color: #494329;
+  color: #B3001B;
   text-decoration: none;
+  
 }
 
 pre {
@@ -67,11 +68,12 @@ ul {
   list-style-position: outside;
 }
 
-.site-title {
-  font-size: 2rem;
-  font-weight: 100;
+.site-title a{
+  font-size: 3rem;
+  font-weight: 600;
   margin: 0 0 1rem 0;
-  font-family: "Lato";
+  font-family: 'Berkshire Swash', cursive;
+  color: #F1F3F3;
 }
 
 #masthead,
@@ -81,6 +83,10 @@ footer.site-footer {
   width: 80%;
 }
 
+footer a{
+  color:#ccc;
+}
+
 .main-navigation li {
   list-style-type: none;
   display: inline-block;
@@ -88,16 +94,17 @@ footer.site-footer {
 
 .main-navigation li a {
   padding: 5px;
+  color: #D9B8C4;
 }
 
 .main-navigation li:hover>a {
-  color: #000;
+  color: rgb(234, 234, 234);
 }
 
 .main-navigation li.current-menu-item>a,
 .main-navigation li.current-page-parent>a {
   font-weight: bold;
-  color: #494329;
+  color: #F1F3F3;
 }
 
 .main-navigation li ul {
@@ -109,7 +116,7 @@ footer.site-footer {
   position: absolute;
   margin-left: -10px;
   z-index: 100;
-  background: #fff091;
+  background: #482F2F;
   padding: 5px 10px;
 }
 
@@ -119,11 +126,11 @@ footer.site-footer {
 }
 
 #content {
-  background: #f1f3f3;
-  /* margin: 20px auto; */
-  padding: 20px;
+  background: #F1F3F3;
+  margin: 40px auto;
+  padding: 40px;
   /* width: 100%; */
-  /* max-width: 1020px; */
+  max-width: 1000px;
   border-radius: 0px;
   position: relative;
   overflow: auto;
@@ -207,6 +214,16 @@ article.post {
 #secondary {
   width: 25%;
   float: right;
+}
+
+.home #secondary {
+  width: 100%;
+  float: right;
+}
+
+.home #secondary .widget{
+  width: 30%;
+  float: left;
 }
 
 #secondary h2 {

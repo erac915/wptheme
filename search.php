@@ -4,9 +4,14 @@
 
     <main id="main" class="site-main" role="main">
 
+      <h1>
+        <?php esc_html_e( 'Searching For:', 'wphierarchy'); ?>
+        "<?php echo get_search_query(); ?>"
+      </h1>
+
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+        <?php get_template_part( 'template-parts/content', 'search' ); ?>
 
       <?php endwhile; else : ?>
 
@@ -14,12 +19,12 @@
 
       <?php endif; ?>
 
-      <p>Template: single.php</p>
+      <p>Template: search.php</p>
 
     </main>
 
   </div>
 
-  <?php get_sidebar(); ?>
+  <?php get_sidebar( 'page' ); ?>
 
 <?php get_footer(); ?>
